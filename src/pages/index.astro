@@ -1,1087 +1,835 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Countdown from '../components/Countdown.svelte';
-import Speakers from '../components/Speakers.svelte';
-import Track from '../components/Track.svelte';
+
+import Selection from '../components/Selection.astro'
+import Leapcentres from '../components/Leapcentres.svelte'
+
 
 ---
+<Layout>
 
-<Layout  title="Kerala Startup Mission">
-	   <!-- mian-area -->
-	   <main>
+   <div id="siteLoader" class="site-loader">
+      <div class="preloader-content">
+         <img src="assets/images/loader1.gif" alt="">
+      </div>
+   </div>
+   <div id="page" class="full-page">
+   
+      <main id="content" class="site-main">
+         <!-- Home slider html start -->
+         <section class="home-slider-section" id="home">
+            <div class="home-slider">
+               <div class="home-banner-items">
+                  <div class="banner-inner-wrap bg-cover bg-center" style="background-image: url(/img/bg1.png);"></div>
+                  <div class=" absolute h-full w-full bg-black opacity-20"></div>
+                     <div class="banner-content-wrap">
+                        <div class="container">
+                           <div class="banner-content text-center">
+                              <h2 class="banner-title md:text-6xl text-xl">Launch Empower Accelerate Prosper</h2>
+                              <!-- <h4 class="text-3xl md:text-5xl font-bold text-white">Launch Empower Accelerate Prosper</h4> -->
+                              <!-- <p class=" text-lg">The LEAP coworking space aims to create an environment that nurtures innovation, encourages networking, and facilitates the success of startups and entrepreneurs. Kerala Startup Mission (KSUM) has been at the forefront of supporting startups and entrepreneurs in Kerala through its incubation centers. We are transforming our incubation centers, partner incubation centers, and IEDC owned incubation centers into a vibrant coworking space called LEAP Coworks. LEAP, which stands for Launch Empower Accelerate Prosper, embodies our commitment to fostering innovation, collaboration, and success in the startup ecosystem.</p> -->
+                              <!-- <a href="#" class="button-primary">CONTINUE READING</a> -->
+                           </div>
+                        </div>
+                     </div>
+                  <div class="overlay"></div>
+               </div>
+             
+            </div>
+         </section>
+        
 
-		<!-- banner-area -->
-		<section class="banner-area-three banner-two bg-cover" data-background="img/banner/bg1.png">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-xl-8">
-						<div class="banner-content-three">
-							<h2 class="title wow fadeInUp" data-wow-delay=".2s">Launch Empower Accelerate Prosper</h2>
-							<p class="wow fadeInUp" data-wow-delay=".4s">The LEAP coworking space aims to create an environment that nurtures innovation, encourages networking, and facilitates the success of startups and entrepreneurs.</p>
-							<!-- <a href="#portal" class="btn wow fadeInUp" data-wow-delay=".6s">Login to LEAP Portal</a> -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+         <div class="trip-search-section shape-search-section">
+            <div class="slider-shape"></div>
+            <div class="container">
+               <div class="trip-search-inner white-bg d-flex">
+                  <p class=" text-justify text-base">
+                     The LEAP coworking space aims to create an environment that nurtures innovation, encourages networking, and facilitates the success of startups and entrepreneurs. Kerala Startup Mission (KSUM) has been at the forefront of supporting startups and entrepreneurs in Kerala through its incubation centers. We are transforming our incubation centers, partner incubation centers, and IEDC owned incubation centers into a vibrant coworking space called LEAP Coworks. LEAP, which stands for Launch Empower Accelerate Prosper, embodies our commitment to fostering innovation, collaboration, and success in the startup ecosystem.
+                  </p>
+                  <p class=" text-justify pt-6 text-base">
+                     LEAP will offer well designed workspace, meeting rooms, high speed internet connectivity and other essential amenities  for a productive environment. While transitioning to a coworking model KSUM will continue to provide valuable incubation support service  to startups, Including mentorship programs, business development assistance, access to funding opportunities  and expert guidance. LEAP will foster a vibrant community of like-minded individuals and startups, creating opportunities for collaboration, knowledge sharing and networking. LEAP will become a single access point for entrepreneurs to enter the startup ecosystem.
+                  </p>
+               </div>
+            </div>
+         </div>
+      
 
-		<section class="features-area-three features-bg-two" data-background="/img/bg/features_bg02.jpg">
-			<div class="container">
-				<div class="features-item-wrap">
-					<div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-						<div class="">
-							<div class="fetures-item-three wow fadeInUp" data-wow-delay=".2s">
-								<div class="fetures-thumb-three">
-									<a href="https://startups.startupmission.in/application/incubation" target="_blank"><img src="/img/33.png" alt=""></a>
-								</div>
-								<div class="fetures-content-three">
-									
-									<div class="project-content-four">
-									<h4 class="title"><a href="https://startups.startupmission.in/application/incubation" target="_blank">Apply For Coworking Space</a></h4>
-                                      
-                                        <div class="content-right">
-                                            <a  href="https://startups.startupmission.in/application/incubation" target="_blank" class="link-btn"><i class="fas fa-arrow-right"></i></a>
-                                        </div>
+         <section class="package-section py-24" id="LEAP_Coworks">
+            <div class="container">
+               <div class="section-heading">
+                  <div class="row align-items-end">
+                     <div class="col-lg-6">
+                        <h5 class="dash-style">WORKSPACES REIMAGINED</h5>
+                        <h2>Explore LEAP Coworks</h2>
+                     </div>
+                     <div class="col-lg-5">
+                        <div class="section-disc text-base text-justify">
+                           Experience plug-and-play workstations, meeting rooms, and discussion spaces, all powered by high-speed internet and modern facilities.                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="career-detail-section pb-24">
+                  <div class="career-detail-inner">
+                     <div class="container">
+                        <div class="">
+                           <div class="">
+                              <div class="">
+                                 <figure class="">
+                                    <img src="/img/img.png" class=" h-60 w-2/3" alt="">
+                                 </figure>
+                              </div>
+                              <div class="tab-container">
+                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                       <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Apply for Coworking</a>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">LEAP Centre Rate card</a>
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                       <a class="nav-link" id="requirement-tab" data-toggle="tab" href="#requirement" role="tab" aria-controls="requirement" aria-selected="false">Requirement</a>
+                                    </li> -->
+                                 </ul>
+                                 <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                                       <div class="overview-content">
+                                          <p class="text-base  font-semibold">Eligibility Criteria for KSUM Owned centres:</p>
+                                          <div class="pl-10 pt-6">
+                                             <ul class=" list-disc list-outside ">
+                                                <li class="font-semibold text-justify">Startups with a valid KSUM Unique ID </li>
+                                                <li class=" text-justify font-semibold">Subsidized prices are exclusively applicable to startups who possess a KSUM Unique ID.</li>
+                                                <li class=" text-justify font-semibold">
+                                                   Startups registered as Private Limited (Pvt) / Limited Liability Partnership (LLP)/ One Person Company (OPC) are eligible to apply for LEAP Coworking spaces even if they do not have a KSUM Unique ID. However, such entities will not be eligible for subsidized prices.
+                                                </li>
+                                             </ul>
+                                          </div>
+                                         
+                                       </div>
                                     </div>
-								</div>
-							</div>
-						</div>
-						<div class="">
-							<div class="fetures-item-three wow fadeInUp" data-wow-delay=".4s">
-								<div class="fetures-thumb-three">
-									<a href="#portal"><img src="/img/11.png" alt=""></a>
-								</div>
-								<div class="fetures-content-three">
-									
-									<div class="project-content-four">
-									<h4 class="title"><a href="#portal">Get LEAP Membership</a></h4>
-                                      
-                                        <div class="content-right">
-                                            <a href="#portal" class="link-btn"><i class="fas fa-arrow-right"></i></a>
-                                        </div>
+                                    <div class="tab-pane" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+                                       <div class="experience-content">
+                                             <div class="">
+                                                <div>
+                                                      <div class="overflow-x-auto">
+                                                         <table class="w-full border-collapse border border-gray-300 text-black">
+                                                            <thead>
+                                                              <tr class="bg-gray-100 text-black text-left">
+                                                                <th class="border border-gray-300 text-black px-3 py-2">Centers</th>
+                                                                <th class="border border-gray-300 text-black px-3 py-2">Type of Space</th>
+                                                                <th class="border border-gray-300 text-black px-3 py-2">Base Rate</th>
+                                                                <th class="border border-gray-300 text-black px-3 py-2">Subsidy</th>
+                                                                <th class="border border-gray-300 text-black px-3 py-2">After Subsidy</th>
+                                                              </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                              <tr class="hover:bg-gray-50">
+                                                                <td class="border border-gray-300 text-black px-3 py-2" rowspan="3">Trivandrum<br>Kochi<br>Kozhikode</td>
+                                                                <td class="border border-gray-300 text-black px-3 py-2">Square feet wise</td>
+                                                                <td class="border border-gray-300 text-black px-3 py-2 ">Rs.100 Per sq.feet</td>
+                                                                <td class="border border-gray-300 text-black px-3 py-2 text-center">40%</td>
+                                                                <td class="border border-gray-300 text-black px-3 py-2 ">Rs. 60 Per sq.feet</td>
+                                                              </tr>
+                                                              <tr class="hover:bg-gray-50">
+                                                                <td class="border border-gray-300 text-black px-3 py-2">Coworking space</td>
+                                                                <td class="border border-gray-300 text-black px-3 py-2 ">Rs 5500/- Per seat</td>
+                                                                <td class="border border-gray-300 text-black px-3 py-2 text-center">40%</td>
+                                                                <td class="border border-gray-300 text-black px-3 py-2 ">Rs.3300/-</td>
+                                                              </tr>
+                                                              <tr class="hover:bg-gray-50">
+                                                                <td class="border border-gray-300 text-black px-3 py-2">Dedicated Seats at closed space</td>
+                                                                <td class="border border-gray-300 text-black px-3 py-2 ">Rs 6000/- Per seat</td>
+                                                                <td class="border border-gray-300 text-black px-3 py-2 text-center">40%</td>
+                                                                <td class="border border-gray-300 text-black px-3 py-2 ">Rs.3600/-</td>
+                                                              </tr>
+                                                              <tr class="hover:bg-gray-50">
+                                                                <td class="border border-gray-300 text-black px-3 py-2">Palakkad, Kasaragod</td>
+                                                                <td class="border border-gray-300 text-black px-3 py-2">Coworking space</td>
+                                                                <td class="border border-gray-300 text-black px-3 py-2 ">Rs 3000/- Per seat</td>
+                                                                <td class="border border-gray-300 text-black px-3 py-2 text-center">40%</td>
+                                                                <td class="border border-gray-300 text-black px-3 py-2 ">Rs.1800/-</td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                          
+                                                      </div>
+                                                </div>
+                                                <div>
+                                                   <p class=" font-bold">Please note the following.</p>
+                                                   <div class=" pl-10 pt-3">
+                                                      <ul class=" list-disc list-outside">
+                                                         <li class=" font-semibold">Subsidy will be applicable to startups having unique id (KSUM).
+                                                         </li>
+                                                         <li class=" font-semibold">
+                                                            Women startups will get an additional subsidy of 10%.
+                                                         </li>
+                                                         <li class=" font-semibold">
+                                                            The subsidy will be reduced 5% every year on renewal of agreement.
+                                                         </li>
+                                                      </ul>
+                                                   </div>
+                                                </div>
+                                               
+                                             </div>
+                                       </div>
                                     </div>
-								</div>
-							
-							</div>
-						</div>
-						<div class="">
-							<div class="fetures-item-three wow fadeInUp" data-wow-delay=".6s">
-								<div class="fetures-thumb-three">
-									<a href="https://facility.startupmission.in/" target="_blank"><img src="/img/55.png" alt=""></a>
-								</div>
-								<div class="fetures-content-three">
-									
-									<div class="project-content-four">
-									<h4 class="title"><a href="https://facility.startupmission.in/" target="_blank">Facility Booking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h4>
-                                      
-                                        <div class="content-right">
-                                            <a href="https://facility.startupmission.in/" target="_blank" class="link-btn"><i class="fas fa-arrow-right"></i></a>
-                                        </div>
+                                  
+                                 </div>
+                              </div>
+                           </div>
+                          
+                        </div>
+                        <div class="section-heading pt-10 pb-0 mb-0">
+                           <h5 class="dash-style uppercase">Selection process</h5>
+                        </div>
+                        <Selection></Selection>
+                       
+                     </div>
+
+                  </div>
+                 
+               </div>
+            </div>
+           
+         </section>
+
+         <section class='w-full'>
+            <div class="container w-full">
+               <div class="w-full">
+                  <div class="btn-wrap items-end justify-end text-end flex w-full">
+                     <a href="https://startups.startupmission.in/application/incubation" target="_blank" class="button-primary uppercase">Apply Now</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+
+
+
+         <div class="single-tour-section pt-32 pb-2" id="LEAP_Membership">
+
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8">
+                     <div class="single-tour-inner">
+                        <div class="section-heading">
+                           <h5 class="dash-style">Unlock Opportunities with LEAP Membership</h5>
+                           <h2>Get LEAP Membership card?</h2>
+                        </div>
+                        <div class="tab-container">
+                           <ul class="nav nav-tabs" id="myTab" role="tablist">
+                             
+                              <li class="nav-item">
+                                 <a class="nav-link active" id="program-tab" data-toggle="tab" href="#program" role="tab" aria-controls="program" aria-selected="true" >Facilities and amenities
+                                 </a>
+                              </li>
+                            
+                           </ul>
+                           <div class="tab-content" id="myTabContent">
+                             
+                              <div class="tab-pane fade show active" id="program" role="tabpanel" aria-labelledby="program-tab">
+                                
+                                 <div class="">
+                                    <p class="text-base pb-4 font-semibold">
+                                       LEAP membership is open to startups with a KSUM unique ID, as well as entrepreneurs and professionals looking to connect and collaborate with Kerala Startup Mission.
+                                    </p>
+                                    <ul class="list-disc list-outside pl-6 font-semibold">
+                                       <li>
+                                          Subsidized access to all LEAP center facilities
+                                       </li>
+                                       <li>
+                                          Access to KSUM's partner incubation centers across the State
+                                       </li>
+                                       <li>
+                                          Will get access to book Flexi Workstations
+                                       </li>
+                                       <li>
+                                          Additional subsidies for KSUM partnering events
+                                       </li>
+                                       <li>
+                                          Talent acquisition support
+                                       </li>
+                                       <li>
+                                          Uninterrupted internet and electricity
+                                       </li>
+                                       <li>
+                                          Internship drives and tech training
+                                       </li>
+                                       <li>
+                                          5 days access to flexi seats free of cost at any facility every month
+                                       </li>
+                                       <li>
+                                          One year validity for a membership card
+                                       </li>
+                                       <li>
+                                          Access to Leap Centers across the country
+                                       </li>
+                                       <li>
+                                          Access to Startup Infinity Centers across the world
+                                       </li>
+                                    </ul>
+                                    <!-- <div class="btn-wrap items-end justify-end text-end flex">
+                                       <a href="https://leap-portal.startupmission.in/login" target="_blank" class="button-primary">Apply Now</a>
+                                    </div> -->
+                                 </div>
+                              </div>
+                              <!-- <div class="tab-pane" id="review" role="tabpanel" aria-labelledby="review-tab">
+                                 <div class="summary-review">
+                                    <div class="review-score">
+                                       <span>4.9</span>
                                     </div>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- banner-area-end -->
-		
-		
-		<!-- <section class="banner-area-two parallax">
-			<div class="container">
-				<div class="row align-items-center justify-content-center">
-					<div class="col-lg-6 col-md-10 order-0 order-lg-2">
-						<div class="banner-img-wrap">
-							<img src="img/banner/AdobeStock_599990817 1.png" alt="">
-							
-							<div class="overly-text">
-								<h2 class="title">LEAP</h2>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="banner-content-two">
-							<span class="sub-title wow fadeInUp" data-wow-delay=".2s">LEAP</span>
-							<h2 class="title wow fadeInUp" data-wow-delay=".4s">Launch Empower Accelerate Prosper</h2>
-							<p class="wow fadeInUp" data-wow-delay=".6s">Coworks</p>
-							<a href="project.html" class="btn wow fadeInUp" data-wow-delay=".8s">Register Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="banner-shape-wrap">
-				<ul class="list-wrap">
-					<li><img src="img/banner/h3_banner_shape01.png" alt="" class="layer" data-depth="0.3"></li>
-					<li><img src="img/banner/h3_banner_shape0.png" alt="" class="layer" data-depth="0.3"></li>
-					<li><img src="img/banner/h3_banner_shape03.png" alt="" class="layer" data-depth="0.1"></li>
-					<li><img src="img/banner/leapimg1.png" alt="" class="layer" data-depth="0.2"></li>
-					<li><img src="img/banner/h3_banner_shape05.png" alt="" class="wow fadeInLeft" data-wow-delay=".4s"></li>
-					<li><img src="img/banner/h3_banner_shape06.png" alt=""></li>
-					<li><img src="img/banner/leapimg2.png" alt="" class="rotateme"></li>
-				</ul>
-			</div>
-		</section> -->
-	
+                                    <div class="review-score-content">
+                                       <h3>
+                                          Excellent
+                                          <span>( Based on 24 reviews )</span>
+                                       </h3>
+                                       <p>Tincidunt iaculis pede mus lobortis hendrerit eveniet impedit aenean mauris qui, pharetra rem doloremque laboris euismod deserunt non, cupiditate, vestibulum.</p>
+                                    </div>
+                                 </div>
+                                 <div class="comment-area">
+                                    <h3 class="comment-title">3 Reviews</h3>
+                                    <div class="comment-area-inner">
+                                       <ol>
+                                          <li>
+                                             <figure class="comment-thumb">
+                                                <img src="assets/images/img20.jpg" alt="">
+                                             </figure>
+                                             <div class="comment-content">
+                                                <div class="comment-header">
+                                                   <h5 class="author-name">Tom Sawyer</h5>
+                                                   <span class="post-on">Jana 10 2020</span>
+                                                   <div class="rating-wrap">
+                                                      <div class="rating-start" title="Rated 5 out of 5">
+                                                         <span style="width: 90%;"></span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <p>Officia amet posuere voluptates, mollit montes eaque accusamus laboriosam quisque cupidatat dolor pariatur, pariatur auctor.</p>
+                                                <a href="#" class="reply"><i class="fas fa-reply"></i>Reply</a>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <ol>
+                                                <li>
+                                                   <figure class="comment-thumb">
+                                                      <img src="assets/images/img21.jpg" alt="">
+                                                   </figure>
+                                                   <div class="comment-content">
+                                                      <div class="comment-header">
+                                                         <h5 class="author-name">John Doe</h5>
+                                                         <span class="post-on">Jana 10 2020</span>
+                                                         <div class="rating-wrap">
+                                                            <div class="rating-start" title="Rated 5 out of 5">
+                                                               <span style="width: 90%"></span>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <p>Officia amet posuere voluptates, mollit montes eaque accusamus laboriosam quisque cupidatat dolor pariatur, pariatur auctor.</p>
+                                                      <a href="#" class="reply"><i class="fas fa-reply"></i>Reply</a>
+                                                   </div>
+                                                </li>
+                                             </ol>
+                                          </li>
+                                       </ol>
+                                       <ol>
+                                          <li>
+                                             <figure class="comment-thumb">
+                                                <img src="assets/images/img22.jpg" alt="">
+                                             </figure>
+                                             <div class="comment-content">
+                                                <div class="comment-header">
+                                                   <h5 class="author-name">Jaan Smith</h5>
+                                                   <span class="post-on">Jana 10 2020</span>
+                                                   <div class="rating-wrap">
+                                                      <div class="rating-start" title="Rated 5 out of 5">
+                                                         <span></span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <p>Officia amet posuere voluptates, mollit montes eaque accusamus laboriosam quisque cupidatat dolor pariatur, pariatur auctor.</p>
+                                                <a href="#" class="reply"><i class="fas fa-reply"></i>Reply</a>
+                                             </div>
+                                          </li>
+                                       </ol>
+                                    </div>
+                                    <div class="comment-form-wrap">
+                                       <h3 class="comment-title">Leave a Review</h3>
+                                       <form class="comment-form">
+                                          <div class="full-width rate-wrap">
+                                             <label>Your rating</label>
+                                             <div class="procduct-rate">
+                                                <span></span>
+                                             </div>
+                                          </div>
+                                          <p>
+                                             <input type="text" name="name" placeholder="Name">
+                                          </p>
+                                          <p>
+                                             <input type="text" name="name" placeholder="Last name">
+                                          </p>
+                                          <p>
+                                             <input type="email" name="email" placeholder="Email">
+                                          </p>
+                                          <p>
+                                             <input type="text" name="subject" placeholder="Subject">
+                                          </p>
+                                          <p>
+                                             <textarea rows="6" placeholder="Your review"></textarea>
+                                          </p>
+                                          <p>
+                                             <input type="submit" name="submit" value="Submit">
+                                          </p>
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div> -->
+                              <!-- <div class="tab-pane" id="map" role="tabpanel" aria-labelledby="map-tab">
+                                 <div class="map-area">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60998820.06503915!2d95.3386452160086!3d-21.069765827214972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2sAustralia!5e0!3m2!1sen!2snp!4v1579777829477!5m2!1sen!2snp" height="450" allowfullscreen=""></iframe>
+                                 </div>
+                              </div> -->
+                           </div>
+                        </div>
+                        <div class="single-tour-gallery">
+                           <!-- <h3>GALLERY / PHOTOS</h3> -->
+                           <div class="single-tour-slider">
+                              <div class="single-tour-item">
+                                 <figure class="feature-image">
+                                    <img src="/img/1.png" alt="">
+                                 </figure>
+                              </div>
+                              <div class="single-tour-item">
+                                 <figure class="feature-image">
+                                    <img src="/img/2.png" alt="">
+                                 </figure>
+                              </div>
+                              <div class="single-tour-item">
+                                 <figure class="feature-image">
+                                    <img src="/img/3.png" alt="">
+                                 </figure>
+                              </div>
+                              <div class="single-tour-item">
+                                 <figure class="feature-image">
+                                    <img src="/img/4.png" alt="">
+                                 </figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="sidebar">
+                        <div class="travel-package-content text-center py-24" style="background-image: url(/img/55.png);">
+                           <h5 class="pt-10"></h5>
+                           <h3 class="text-justify"></h3>
+                           <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus.</p>
+                           <ul>
+                              <li>
+                                 <a href="#"><i class="far fa-arrow-alt-circle-right"></i>Vacation packages</a>
+                              </li>
+                              <li>
+                                 <a href="#"><i class="far fa-arrow-alt-circle-right"></i>Honeymoon packages</a>
+                              </li>
+                              <li>
+                                 <a href="#"><i class="far fa-arrow-alt-circle-right"></i>New year packages</a>
+                              </li>
+                              <li>
+                                 <a href="#"><i class="far fa-arrow-alt-circle-right"></i>Weekend packages</a>
+                              </li>
+                           </ul> -->
+                        </div>
+                        <div class="package-price">
+                           <h5 class="price text-base">
+                              LEAP will offer well designed workspace, meeting rooms, high speed internet connectivity and other essential amenities  for a productive environment. Through LEAP membership KSUM aims to foster a vibrant community of like-minded individuals and startups, creating opportunities for collaboration, knowledge sharing and networking. LEAP will become a single access point for entrepreneurs to enter the startup ecosystem.
+                           </h5>
+                          
+                        </div>
+                       
+                        <div class="widget-bg information-content">
+                           <h5>Eligibility Criteria</h5>
+                           <ul class=" list-disc list-outside pb-4">
+                              <li>
+                                 Startups having KSUM unique id.
+                              </li>
+                              <li>
+                                 Startups, entrepreneurs, and professionals looking to connect and collaborate with Kerala Startup Mission.
+                              </li>
+                           </ul>
+                         
+                           <p class="text-base text-start pb-3 font-semibold">
+                              Required Documents for applicants other than Startups having KSUM unique id    
+                           </p>
+                           <ul class=" list-disc list-outside">
+                              <li>Proof of identity (e.g., Aadhaar, PAN, or Passport).</li>
+                              <li>Relevant proof of startup, entrepreneurship, or professional affiliation.
+                              </li>
+                           </ul>
+                          
+                        </div>
+                       
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
 
 
 
-
-		<section id="portal" class="features-area-two features-bg" data-background="/img/bg/features_bg.jpg">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-xl-5 col-lg-6 col-md-8">
-						<div class="features-item-two wow fadeInUp " data-wow-delay=".2s">
-							<div class="features-item-shape">
-								<svg viewBox="0 0 451 518" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M0 15.5706C0 12.3122 2.60044 9.64945 5.85786 9.57226L389.414 0.483096C423.541 -0.32561 451.466 27.4618 450.825 61.5922L442.369 512.113C442.308 515.382 439.64 518 436.37 518H6C2.6863 518 0 515.314 0 512V15.5706Z" fill="currentcolor" />
-								</svg>
-							</div>
-							<div class="features-item-top">
-								
-								<div class="features-content-two">
-									<div class=" justify-between flex mb-3">
-										<h2 class="title">Platinum Card</h2>
-										<h2 class="title flex text-blue-900 "><span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-											<path stroke-linecap="round" stroke-linejoin="round" d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-										  </svg>
-										  </span>4999</h2>
-
-									</div>
-									<div class="about-list1 py-0 my-0">
-										<ul class="list-wrap">
-											<li><i class="fas fa-check"></i>Validity : 12 Months</li>
-											<li><i class="fas fa-check"></i>Flexi Seats Booking : 5 Times free in a Month (After that 25% subsidy)</li>
-											<li><i class="fas fa-check"></i>Flexi Seats Additional seat Booking maximum 2 seats : 25 % subsidy</li>
-											<li><i class="fas fa-check"></i>KSUM conducting Startup Events : 25 % Additional Subsidy</li>
-											<li><i class="fas fa-check"></i>Access to Startup Infinity Center across the world : 2 times free per month</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="features-thumb">
-								<a href="https://leap-portal.startupmission.in/startup/subscribe" target="_blank"><img src="/img/platinumcard.jpeg" alt=""></a>
-								<a href="https://leap-portal.startupmission.in/startup/subscribe" target="_blank" class="link-btn"><img src="/img/icon/right_arrow02.svg" alt=""></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-5 col-lg-6 col-md-8">
-						<div class="features-item-two wow fadeInUp" data-wow-delay=".4s">
-							<div class="features-item-shape">
-								<svg viewBox="0 0 451 518" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M0 15.5706C0 12.3122 2.60044 9.64945 5.85786 9.57226L389.414 0.483096C423.541 -0.32561 451.466 27.4618 450.825 61.5922L442.369 512.113C442.308 515.382 439.64 518 436.37 518H6C2.6863 518 0 515.314 0 512V15.5706Z" fill="currentcolor" />
-								</svg>
-							</div>
-							<div class="features-item-top">
-								
-								<div class="features-content-two">
-									<div class=" flex justify-between mb-3">
-										<h2 class="title">Gold Card</h2>
-
-										<h2 class="title flex text-blue-900 "><span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-											<path stroke-linecap="round" stroke-linejoin="round" d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-										  </svg>
-										  </span>1999</h2>
-									</div>
-									<div class="about-list1 py-0 my-0">
-										<ul class="list-wrap">
-											<li><i class="fas fa-check"></i>Validity : 12 Months</li>
-											<li><i class="fas fa-check"></i>Flexi Seats Booking : 2 Times free in month After that 25% subsidy</li>
-											<li><i class="fas fa-check"></i>Flexi Seats Additional seat Booking maximum 2 seats : 25 % subsidy</li>
-											<li><i class="fas fa-check"></i>KSUM conducting Startup Events : 15% additional Subsidy</li>
-											<li><i class="fas fa-check"></i>Access to Startup Infinity Center across the world : Nil</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="features-thumb">
-								<a href="https://leap-portal.startupmission.in/startup/subscribe" target="_blank"><img src="/img/goldcard.jpeg" alt=""></a>
-								<a href="https://leap-portal.startupmission.in/startup/subscribe" target="_blank" class="link-btn"><img src="/img/icon/right_arrow02.svg" alt=""></a>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-				
-			</div>
-		</section>
-
-
-
-
-
-
-
-		<section class="about-area py-24" id="about">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-xl-7 col-lg-6 order-0 order-lg-2">
-						<div class="about-img-wrap">
-							<img src="img/banner/AdobeStock_599843968 1.png" alt="" class="wow fadeInRight" data-wow-delay=".4s">
-							<img src="img/banner/AdobeStock_601484628 1.png" alt="" class="wow fadeInRight" data-wow-delay=".2s">
-							<div class="about-experiences-wrap">
-								<div class="experiences-item">
-									<div class="icon">
-										<img src="img/icon/about_icon01.svg" alt="">
-									</div>
-									<div class="content">
-										<h6 class="title">We have more than 10 years of experiences</h6>
-									</div>
-								</div>
-								<div class="experiences-item">
-									<div class="icon">
-										<img src="img/icon/about_icon02.svg" alt="">
-									</div>
-									<div class="content">
-										<h6 class="title">We use professional and experienced person</h6>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="section-title w-full py-6">
-				
-						<h2 class="title tg-element-title md:text-9xl text-5xl" style="opacity: 0.2;"><sup><i class="fas fa-quote-left text-lg text-gray-500"></i></sup>We’re Committed to  provide comprehensive support and resources to startups and entrepreneurs in Kerala.<sup><i class="fas fa-quote-right text-lg text-gray-500"></i></sup>  </h2>
-						
-					</div>
-					<div class="col-xl-5 col-lg-6" id="facility">
-						<div class="about-content">
-							
-							<div class="section-title mb-25 tg-heading-subheading animation-style3">
-								<!-- <span class="sub-title tg-element-title">About Our Company</span> -->
-								<!-- <h2 class="title tg-element-title">We’re Committed to  provide comprehensive support and resources to startups and entrepreneurs in Kerala.  </h2> -->
-							</div>
-							<p>Kerala Startup Mission (KSUM) has been at the forefront of supporting startups and entrepreneurs in Kerala through its incubation centers. Now, we are going to transform our incubation centers, partner incubation centers, and IEDC owned incubation centers into a vibrant coworking space called LEAP Coworks. LEAP, which stands for Launch Empower Accelerate Prosper, embodies our commitment to fostering innovation, collaboration, and success in the startup ecosystem.</p>
-							<div class="about-list">
-								<ul class="list-wrap">
-									<li><i class="fas fa-check"></i>Plug and play Workstations</li>
-									<li><i class="fas fa-check"></i>Meeting Rooms & Discussion Rooms</li>
-									<li><i class="fas fa-check"></i>High speed Internet</li>
-								</ul>
-							</div>
-							<p  class="btn cursor-pointer" onclick="myFunction()" id="btn" >Learn More</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-
-
-		<section class="services-area-three mb-24" id="hidden_div" style="display:none">
-			<div class="services-bg jarallax" data-background="img/banner/AdobeStock_493770853 1.png"></div>
-			<div class="container">
-				
-				<div class="row justify-content-center">
-					<div class="col-xl-10">
-						<div class="services-nav-wrap">
-							<ul class="nav nav-tabs" id="myTab" role="tablist">
-								<li class="nav-item" role="presentation">
-									<button class="nav-link active" id="building-tab" data-bs-toggle="tab" data-bs-target="#building-tab-pane" type="button" role="tab" aria-controls="building-tab-pane" aria-selected="true">Facilities includes</button>
-								</li>
-								
-							</ul>
-							<div class="tab-content" id="myTabContent">
-								<div class="tab-pane fade show active" id="building-tab-pane" role="tabpanel" aria-labelledby="building-tab" tabindex="0">
-									<div class="services-item-three">
-										<!-- <div class="services-thumb-three">
-											<img src="img/services/h4_services_img01.jpg" alt="">
-										</div> -->
-										<div class="services-content-three w-full">
-											<!-- <div class="section-title mb-30">
-												<h2 class="title">Bringing New IT Business Solutions And Ideas</h2>
-											</div>
-											<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of</p> -->
-											<div class="services-list w-full">
-												<ul class="list-wrap flex items-start">
-													<li><i class="fas fa-check-circle"></i>Will gain subsidized access to all LEAP center facilities</li>
-													<li><i class="fas fa-check-circle"></i>Access to KSUM's partner incubation centers across the State </li>
-													<li><i class="fas fa-check-circle"></i>Will get access to book Flexi Workstations</li>
-													<li><i class="fas fa-check-circle"></i>Additional subsidies for KSUM partnering events</li>
-													<li><i class="fas fa-check-circle"></i>Talent acquisition support</li>
-													<li><i class="fas fa-check-circle"></i>Cloud credits</li>
-													<li><i class="fas fa-check-circle"></i>Uninterrupted internet and electricity</li>
-													<li><i class="fas fa-check-circle"></i>Internship drives and tech training</li>
-													<li><i class="fas fa-check-circle"></i>5 days access to flexi seats free of cost at any facility every month</li>
-												
-													<li><i class="fas fa-check-circle"></i>One year validity for a membership card</li>
-													<li><i class="fas fa-check-circle"></i>25% subsidy on all major events done by KSUM</li>
-													<li><i class="fas fa-check-circle"></i>Access to Leap Centers across the country</li>
-													<li><i class="fas fa-check-circle"></i>Access to Startup Infinity Centers across the world</li>
-													<li><i class="fas fa-check-circle"></i>Startup matchmaking opportunity</li>
-													<li><i class="fas fa-check-circle"></i>Startup Cofounder matchmaking opportunity</li>
-													<li><i class="fas fa-check-circle"></i>Access to investor network</li>
-													<li><i class="fas fa-check-circle"></i>Access to mentor network</li>
-													<li><i class="fas fa-check-circle"></i>Access to Technology experts</li>
-					
-												
-												</ul>
-											</div>
-											<a href="https://leap-portal.startupmission.in/" target="_blank" class="btn text-end float-right">Register Now</a>
-										</div>
-									</div>
-								</div>
-								
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-
-
-		<!-- <section class="services-area-three mb-24" id="hidden_div" style="display:none">
-			<div class="services-bg jarallax" data-background="img/banner/AdobeStock_493770853 1.png"></div>
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-12">
-						<div class="section-title text-center white-title mb-60">
-							<span class="sub-title">Discover Our Company</span>
-							<h2 class="title">See Our Roofing Services Details</h2>
-						</div>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-xl-10">
-						<div class="services-nav-wrap">
-							<ul class="nav nav-tabs" id="myTab" role="tablist">
-								<li class="nav-item" role="presentation">
-									<button class="nav-link active" id="building-tab" data-bs-toggle="tab" data-bs-target="#building-tab-pane" type="button" role="tab" aria-controls="building-tab-pane" aria-selected="true">Facilities includes</button>
-								</li>
-								
-							</ul>
-							<div class="tab-content" id="myTabContent">
-								<div class="tab-pane fade show active" id="building-tab-pane" role="tabpanel" aria-labelledby="building-tab" tabindex="0">
-									<div class="services-item-three">
-										 <div class="services-thumb-three">
-											<img src="img/services/h4_services_img01.jpg" alt="">
-										</div> 
-										<div class="services-content-three w-full">
-											 <div class="section-title mb-30">
-												<h2 class="title">Bringing New IT Business Solutions And Ideas</h2>
-											</div>
-											<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of</p>
-											<div class="services-list w-full">
-												<ul class="list-wrap flex items-start">
-													<li><i class="fas fa-check-circle"></i>Plug and play Workstations</li>
-													<li><i class="fas fa-check-circle"></i>Meeting Rooms & Discussion Rooms</li>
-													<li><i class="fas fa-check-circle"></i>Internet Upto 100mbps</li>
-													<li><i class="fas fa-check-circle"></i>Power & Air conditioning</li>
-													<li><i class="fas fa-check-circle"></i>Housekeeping Service</li>
-													<li><i class="fas fa-check-circle"></i>Security</li>
-													<li><i class="fas fa-check-circle"></i>CCTV</li>
-													<li><i class="fas fa-check-circle"></i>Maintenance</li>
-													<li><i class="fas fa-check-circle"></i>Certified Fire Fighting Building</li>
-												
-													<li><i class="fas fa-check-circle"></i>Free credits on product development tools</li>
-													<li><i class="fas fa-check-circle"></i>Drinking Water</li>
-													<li><i class="fas fa-check-circle"></i>Cafeteria</li>
-													<li><i class="fas fa-check-circle"></i>Sick room</li>
-													<li><i class="fas fa-check-circle"></i>Game Center</li>
-													<li><i class="fas fa-check-circle"></i>Access to investor network</li>
-													<li><i class="fas fa-check-circle"></i>Access to mentor network</li>
-													<li><i class="fas fa-check-circle"></i>Access to Technology experts</li>
-													<li><i class="fas fa-check-circle"></i>Free credits on product development tools</li>
-													<li><i class="fas fa-check-circle"></i>Access to KSUM partnering Events and programmes </li>
-													<li><i class="fas fa-check-circle"></i>Entry to the Founder's community </li>
-												
-												</ul>
-											</div>
-											<a href="https://leap-portal.startupmission.in/" target="_blank" class="btn text-end float-right">Register Now</a>
-										</div>
-									</div>
-								</div>
-								
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
-	 <!-- project-area 1-->
-
-
-	<!-- ########################################################################### -->
-	
-	<!-- <div id="portal" class="area-bg-three bg-no-repeat bg-cover" data-background="/img/bg/features_bg02.jpg"> -->
-	
-		<!-- <section class="inner-blog-area pt-120 pb-120">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-xl-8">
-						<div class="row">
-							<div class="col-lg-6 col-md-6">
-								<div class="blog-post-item">
-									<div class="blog-post-thumb">
-										<a href="blog-details.html"><img src="/img/platinumcard.jpeg" alt=""></a>
-									</div>
-									<div class="blog-post-content bg-white">
-										<a href="https://leap-portal.startupmission.in/startup/subscribe" target="_blank" class="tag">Register Now</a>
-										<table class="table-auto  text-[13px]">
-								
-											<tbody>
-												<tr>
-													<td  class="pb-1 text-blue-900 text-base font-semibold">4999 pack</td>
-													<td  class="pb-1 pr-3"></td>
-													
-													
-												  </tr>
-											  <tr>
-												<td  class="pb-1 pr-3">Validity</td>
-												<td  class="pb-1 pr-3">12 Months</td>
-												
-												
-											  </tr>
-											  <tr>
-												<td class="pb-1 pr-3">Flexi Seats Booking	</td>
-												<td class="pb-1 pr-3">5 Times free in a Month (After that 25% subsidy)</td>
-												
-											  </tr>
-											  <tr>
-												<td class="pb-2">Flexi Seats Additional seat Booking maximum 2 seats	</td>
-												<td class="pb-2">25 % subsidy									</td>
-												
-											  </tr>
-											  <tr>
-												<td>KSUM conducting Startup Events</td>
-												<td>25 % Additional Subsidy</td>
-											  </tr>
-											  <tr>
-												<td>Access to Startup Infinity Center across the world</td>
-												<td>2 times free per month</td>
-											  </tr>
-											</tbody>
-										  </table>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-6 col-md-6">
-								<div class="blog-post-item">
-									<div class="blog-post-thumb">
-										<a href="blog-details.html"><img src="/img/goldcard.jpeg" alt=""></a>
-									</div>
-									<div class="blog-post-content bg-white">
-										<a href="https://leap-portal.startupmission.in/startup/subscribe" target="_blank" class="tag">Register Now</a>
-										<table class="table-auto  text-[13px]">
-								
-											<tbody>
-												<tr>
-													<td  class="pb-1 text-blue-900 text-base font-semibold">1999 pack</td>
-													<td  class="pb-1 pr-3"></td>
-													
-													
-												  </tr>
-											  <tr>
-												<td  class="pb-1 pr-3">Validity</td>
-												<td  class="pb-1 pr-3">12 Months</td>
-												
-												
-											  </tr>
-											  <tr>
-												<td class="pb-1 pr-3">Flexi Seats Booking	</td>
-												<td class="pb-1 pr-3">2 Times free in a Month 
-													After that 25% subsidy
-													
-													</td>
-												
-											  </tr>
-											  <tr>
-												<td class="pb-2">Flexi Seats Additional seat Booking maximum 2 seats	</td>
-												<td class="pb-2">25 % subsidy									</td>
-												
-											  </tr>
-											  <tr>
-												<td>KSUM conducting Startup Events</td>
-												<td>15% additional Subsidy</td>
-											  </tr>
-											  <tr>
-												<td>Access to Startup Infinity Center across the world</td>
-												<td>Nil</td>
-											  </tr>
-											</tbody>
-										  </table>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-						
-					</div>
-					
-				</div>
-			</div>
-		</section> -->
+         <section class=" pt-10">
+            <div class="career-detail-section">
+               <div class="career-detail-inner">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-8">
+                           <div class="job-description p-2 text-white text-lg font-bold">
+                              LEAP membership details (Platinum & Gold membership)
+                           </div>
+                        </div>
+                        <div class="col-lg-12">
+                           <div class="tab-container">
+                              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                 <li class="nav-item">
+                                    <a class="nav-link active" id="leadpcard1" data-toggle="tab" href="#leadpcard" role="tab" aria-controls="leadpcard" aria-selected="true">
+                                      
+                                       Platinum Membership (₹4999)
+                                    </a>
+                                 </li>
+                               
+                                 <li class="nav-item">
+                                    <a class="nav-link" id="requirement-tab" data-toggle="tab" href="#requirement" role="tab" aria-controls="requirement" aria-selected="false">Gold Membership (₹1999)</a>
+                                 </li>
+                              </ul>
+                              
+                              <div class="tab-content" id="myTabContent">
+                                 <div class="tab-pane fade show active" id="leadpcard" role="tabpanel" aria-labelledby="leadpcard1">
+                                    <div class="overview-content flex md:flex-row flex-col ">
+                                       <div class="md:w-2/5 w-full flex-1 ">
+                                          <img src="/img/platinumcard.jpeg" class="" alt="">
+                                       </div>
+                                       <div class="contact-details-wrap pt-2 pl-4 md:w-3/5 w-full">
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Flexi Seats Booking allows up to 5 bookings per month for 1 seat.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Enjoy a 40% subsidy on up to 2 additional Flexi Seat bookings at ₹240 per seat per day.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Additional Flexi Seat bookings are charged at ₹400 per seat per day after the free slots.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Meeting Room usage is free twice per month, with a 50% subsidy on additional bookings.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Access to leap centers across the country - Owned by KSUM
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      The validity period is set for 12 months from activation.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="btn-wrap items-end justify-end text-end flex">
+                                             <a href="https://leap-portal.startupmission.in/login" target="_blank" class="button-primary">Apply Now</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 
+                                 <div class="tab-pane" id="requirement" role="tabpanel" aria-labelledby="requirement-tab">
+                                    <div class="overview-content flex md:flex-row flex-col ">
+                                       <div class="md:w-2/5 w-full flex-1 ">
+                                          <img src="/img/leap/goldcard.jpeg" class="" alt="">
+                                       </div>
+                                       <div class="contact-details-wrap pt-2 pl-4 md:w-3/5 w-full">
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Flexi Seats Booking allows up to 2 bookings per month for 1 seat.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Enjoy a 40% subsidy on up to 2 additional Flexi Seat bookings at ₹240 per seat per day.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Additional Flexi Seat bookings are charged at ₹400 per seat per day after the free slots.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Meeting Room usage is free once per month, with a 25% subsidy on subsequent bookings.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      Access to leap centers across the country - Owned by KSUM
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="">
+                                                <div class="flex">
+                                                   <div class="travel-package-content" style="padding: 10px; text-align: left;">
+                                                      <i class="far fa-arrow-alt-circle-right"></i>
+                                                   </div>
+                                                   <div style="flex: 2; padding: 10px; text-align: left;">
+                                                      The validity period is set for 12 months from activation.
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="btn-wrap items-end justify-end text-end flex">
+                                             <a href="https://leap-portal.startupmission.in/login" target="_blank" class="button-primary">Apply Now</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                      
+                     </div>
+                  </div>
+               </div>
+              
+            </div>
+         </section>
 
 
 
-	
-		<!-- <section class="project-area-three">
-		<div class="container">
-			
-			<div class="row justify-content-center">
-				<div class="col-lg-4 col-md-6 col-sm-10">
-					<div class="project-item-two">
-						<div class="project-thumb-two">
-							<a href="project-details.html"><img src="/img/platinumcard.jpeg" alt=""></a>
-						</div>
-						<div class="content text-white flex justify-between">
-							<h2 class=" text-white text-2xl font-semibold pt-2">PLATINUM CARD</h2>
-
-						</div>
-						<div class="project-content-two px-3 mx-auto ">
-							<table class="table-auto text-white text-sm">
-								
-								<tbody>
-								  <tr>
-									<td  class="pb-1 pr-3">Validity</td>
-									<td  class="pb-1 pr-3">12 Months</td>
-									
-								  </tr>
-								  <tr>
-									<td class="pb-1 pr-3">Flexi Seats Booking	</td>
-									<td class="pb-1 pr-3">5 Times free in a Month (After that 25% subsidy)</td>
-									
-								  </tr>
-								  <tr>
-									<td>Flexi Seats Additional seat Booking maximum 2 seats	</td>
-									<td>25 % subsidy									</td>
-									
-								  </tr>
-								</tbody>
-							  </table>
-							<a href="https://leap-portal.startupmission.in/startup/subscribe" target="_blank" class=" text-sm bg-white px-2 py-1 w-fit mt-2 flex rounded-full">Register Now
-							  </a>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="col-lg-4 col-md-6 col-sm-10">
-					<div class="project-item-two">
-						<div class="project-thumb-two">
-							<a href="project-details.html"><img src="/img/goldcard.jpeg" alt=""></a>
-						</div>
-						<div class="content text-white flex justify-between">
-							<h2 class=" text-white text-2xl font-semibold pt-2">GOLD CARD</h2>
-
-						</div>
-						<div class="project-content-two px-3 mx-auto ">
-							<table class="table-auto text-white text-sm">
-								
-								<tbody>
-								  <tr>
-									<td  class="pb-1 pr-3">Validity</td>
-									<td  class="pb-1 pr-3">12 Months</td>
-									
-								  </tr>
-								  <tr>
-									<td class="pb-1 pr-3">Flexi Seats Booking	</td>
-									<td class="pb-1 pr-3">2 Times free in a Month (After that 25% subsidy)</td>
-									
-								  </tr>
-								  <tr>
-									<td>Flexi Seats Additional seat Booking maximum 2 seats	</td>
-									<td>25 % subsidy									</td>
-									
-								  </tr>
-								</tbody>
-							  </table>
-							<a href="https://leap-portal.startupmission.in/startup/subscribe" target="_blank" class=" text-sm bg-white px-2 py-1 w-fit mt-2 flex rounded-full">Register Now
-							  </a>
-						</div>
-					</div>
-				</div>
-
-		</div>
-	</section> -->
-	<!-- </div> -->
-	<!-- ########################################################################### -->
-
-
-
-
-	 
-
-
-	 <section class="testimonial-area-two pb-24">
-		<div class="container">
-			<div class="row justify-content-center">
-				
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-10">
-					<div class="testimonial-inner">
-						<div class="testimonial-active-two">
-							<div class="testimonial-item-two">
-								
-								<div class="testimonial-content-two">
-									<div class="content-top">
-										<div class="icon">
-											<i class="fas fa-quote-left"></i>
-										</div>
-										
-									</div>
-									<p>LEAP will offer state-of-the-art infrastructure, well-designed workspaces, meeting rooms, high-speed internet connectivity, and other essential amenities required for a productive work environment.</p>
-									
-								</div>
-							</div>
-							<div class="testimonial-item-two">
-								
-								<div class="testimonial-content-two">
-									<div class="content-top">
-										<div class="icon">
-											<i class="fas fa-quote-left"></i>
-										</div>
-										
-									</div>
-									<p>While transitioning to a coworking model, KSUM will continue to provide valuable incubation support services to startups, including mentorship programs, business development assistance, access to funding opportunities, and expert guidance. .</p>
-									
-								</div>
-							</div>
-							<div class="testimonial-item-two">
-								
-								<div class="testimonial-content-two">
-									<div class="content-top">
-										<div class="icon">
-											<i class="fas fa-quote-left"></i>
-										</div>
-										
-									</div>
-									<p>LEAP will foster a vibrant community of like-minded individuals and startups, creating opportunities for collaboration, knowledge sharing, and networking. We will organize regular events, workshops, and networking sessions to facilitate meaningful connections.</p>
-									
-								</div>
-							</div>
-							<div class="testimonial-item-two">
-								
-								<div class="testimonial-content-two">
-									<div class="content-top">
-										<div class="icon">
-											<i class="fas fa-quote-left"></i>
-										</div>
-										
-									</div>
-									<p>KSUM will introduce flexible membership plans to accommodate various needs of the startup, including hot desks, dedicated desks, and private office spaces. These plans will provide startups with the flexibility to scale their operations as they grow.</p>
-									
-								</div>
-							</div>
-							<div class="testimonial-item-two">
-								
-								<div class="testimonial-content-two">
-									<div class="content-top">
-										<div class="icon">
-											<i class="fas fa-quote-left"></i>
-										</div>
-										
-									</div>
-									<p>LEAP will become the Single access point for entrepreneurs to enter the startup ecosystem and also will get the opportunities to get access to the KSUM Schemes like Grants , Seed Loans , Market access, Mentors connect, Investor connect etc. </p>
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+            <div class="contact-page-section pt-16" id="Facility_Booking">
+               <div class="contact-form-inner">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="contact-from-wrap">
+                              <div class="section-heading">
+                                 <h5 class="dash-style">Book Premium Facilities with LEAP Co Works</h5>
+                                 <h2>Facility Booking</h2>
+                                 <p class="pt-3">
+                                    LEAP Co Works provides common facilities like meeting rooms, conference halls, amphi theatre, event hall etc for the startups and associated communities.
+                                 </p>
+                              </div>
+                              <section class="home-about-section mt-28">
+                                 <div class="container">
+                                    <div class="row">
+                                       <div class="">
+                                          <div class="about-img-wrap">
+                                             <div class="about-img-left">
+                                                <div class="about-img">
+                                                   <img src="/img/leap/img1.png" alt="">
+                                                </div>
+                                             </div>
+                                             <div class="about-img-right">
+                                                <div class="about-img">
+                                                   <img src="/img/leap/img2.png" alt="">
+                                                </div>
+                                                <!-- <div class="about-img">
+                                                   <img src="assets/images/img34.jpg" alt="">
+                                                </div> -->
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </section>
+                             
+                             
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="contact-detail-wrap">
+                              <p>
+                                 LEAP Co Works offers meeting rooms, conference halls, amphitheaters, and event halls for startups and communities. Facilities are available to incubated startups, DIPP-approved startups, associated communities, and industrial bodies. Bookings require admin approval, with advance payment. Subsidies include 50% for incubated startups and 40% for others.
+                              </p>
+                              <div class="details-list">
+                                 <ul>
+                                    <li>
+                                       <span class="icon">
+                                          <i class="fas fa-phone-volume"></i>
+                                       </span>
+                                       <div class="details-content">
+                                          <h4>Trivadrum</h4>
+                                          <span>Manu S - 0471-2700270</span>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <span class="icon">
+                                          <i class="fas fa-phone-volume"></i>
+                                       </span>
+                                       <div class="details-content">
+                                          <h4>Kochi
+                                          </h4>
+                                          <span>Shajahan - 0484-2977137</span>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <span class="icon">
+                                          <i class="fas fa-phone-volume"></i>
+                                       </span>
+                                       <div class="details-content">
+                                          <h4>Kozhikode</h4>
+                                          <span>Ramees - 9633033339</span>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="btn-wrap items-end justify-end text-end flex">
+                                 <a href="https://facility.startupmission.in/" target="_blank" class="button-primary mt-0 uppercase">Book Now</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
 
 
+         
+         <section class="blog-section pt-10 pb-24">
+            <div class="container">
+               <div class="section-heading text-center">
+                  <div class="row">
+                     <div class="col-lg-8 offset-lg-2">
+                        <h5>Your Hub for Innovation and Growth</h5>
+                        <h2>LEAP Centre</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="md:px-0 px-10">
+                  <Leapcentres client:load></Leapcentres>
 
-	
+               </div>
+               <div class="item-center flex  justify-center text-center">
+                  <div class="title-icon-divider"></div>
+               </div>
+            </div>
+         </section>
 
-	 <!-- <section class="inner-project-area py-24">
-		<div class="container">
-			
-			<div class="row justify-content-center">
-				<div class="col-lg-4 col-md-6 col-sm-10">
-					<div class="project-item-two">
-						<div class="project-thumb-two">
-							<a href="/single"><img src="img/project/h3_project_img01.jpg" alt=""></a>
-						</div>
-						<div class="project-content-two">
-							<span>Product Design</span>
-							<h2 class="title"><a href="/single">Web Application</a></h2>
-							<a href="/single" class="link-btn"><i class="fas fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-10">
-					<div class="project-item-two">
-						<div class="project-thumb-two">
-							<a href="/single"><img src="img/project/h3_project_img02.jpg" alt=""></a>
-						</div>
-						<div class="project-content-two">
-							<span>Product Design</span>
-							<h2 class="title"><a href="/single">Web Application</a></h2>
-							<a href="/single" class="link-btn"><i class="fas fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-10">
-					<div class="project-item-two">
-						<div class="project-thumb-two">
-							<a href="/single"><img src="img/project/h3_project_img03.jpg" alt=""></a>
-						</div>
-						<div class="project-content-two">
-							<span>Product Design</span>
-							<h2 class="title"><a href="/single">Web Application</a></h2>
-							<a href="/single" class="link-btn"><i class="fas fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-10">
-					<div class="project-item-two">
-						<div class="project-thumb-two">
-							<a href="/single"><img src="img/project/h3_project_img04.jpg" alt=""></a>
-						</div>
-						<div class="project-content-two">
-							<span>Product Design</span>
-							<h2 class="title"><a href="/single">Web Application</a></h2>
-							<a href="/single" class="link-btn"><i class="fas fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-10">
-					<div class="project-item-two">
-						<div class="project-thumb-two">
-							<a href="/single"><img src="img/project/h3_project_img05.jpg" alt=""></a>
-						</div>
-						<div class="project-content-two">
-							<span>Product Design</span>
-							<h2 class="title"><a href="/single">Web Application</a></h2>
-							<a href="/single" class="link-btn"><i class="fas fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-10">
-					<div class="project-item-two">
-						<div class="project-thumb-two">
-							<a href="/single"><img src="img/project/h3_project_img06.jpg" alt=""></a>
-						</div>
-						<div class="project-content-two">
-							<span>Product Design</span>
-							<h2 class="title"><a href="/single">Web Application</a></h2>
-							<a href="/single" class="link-btn"><i class="fas fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	 <!-- <section class="team-area pb-24">
-		<div class="container">
-			
-			<div class="row justify-content-center">
-				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
-					<div class="team-item">
-						<div class="team-thumb">
-							<a href="/tvm"><img src="img/bg/IMG-20230731-WA0009 1 (1).png" alt=""></a>
-							<div class="team-social">
-								<ul class="list-wrap">
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content bottom-0">
-							<h2 class=" text-white text-base"><a href="/tvm">Kerala Startup Mission</a></h2>
-							<p class=" text-sm text-white">G3B, Tejaswini, Technopark, Trivandrum</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
-					<div class="team-item">
-						<div class="team-thumb">
-							<a href="/startupdreams"><img src="img/bg/2019-04-29 2 (1).png" alt=""></a>
-							<div class="team-social">
-								
-							</div>
-						</div>
-						<div class="team-content">
-							<h2 class="title"><a href="/startupdreams">Startup Dreams</a></h2>
-							<span>Ambedkar Bhavan, Mannamthala, Trivandrum</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
-					<div class="team-item">
-						<div class="team-thumb">
-							<a href="/single"><img src="img/team/team_img03.jpg" alt=""></a>
-							<div class="team-social">
-								
-							</div>
-						</div>
-						<div class="team-content">
-							<h2 class="title"><a href="/single">Karikoka Ahli</a></h2>
-							<span>Roof Engineer</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
-					<div class="team-item">
-						<div class="team-thumb">
-							<a href="/single"><img src="img/team/team_img04.jpg" alt=""></a>
-							<div class="team-social">
-								
-							</div>
-						</div>
-						<div class="team-content">
-							<h2 class="title"><a href="/single">Dickerson MH</a></h2>
-							<span>Roof Engineer</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>  -->
-
-
-<!-- 	
-	<section class="team-area-two pb-24">
-		<div class="container">
-			
-			<div class="row justify-content-center"> -->
-				<Track client:load ></Track>
-				
-				<!-- <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-					<div class="team-item-two">
-						<div class="team-thumb-two">
-							<a href="/tvm"><img src="img/bg/IMG-20230731-WA0009 1.png" alt=""></a>
-							<div class="team-social-two">
-								<ul class="list-wrap">
-								
-									<li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content-two">
-							<h2 class="title"><a href="/tvm">Kerala Startup Mission
-								</a></h2>
-							<span>G3B, Tejaswini, Technopark, Trivandrum</span>
-						</div>
-					</div>
-					</div>
-
-				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-					<div class="team-item-two">
-						<div class="team-thumb-two">
-							<a href="/startupdreams"><img src="img/bg/2019-04-29 2.png" alt=""></a>
-							<div class="team-social-two">
-								<ul class="list-wrap">
-									
-									<li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content-two">
-							<h2 class="title"><a href="/startupdreams">Startup Dreams
-								</a></h2>
-							<span>Ambedkar Bhavan, Mannamthala, Trivandrum</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-					<div class="team-item-two">
-						<div class="team-thumb-two">
-							<a href="/kollam"><img src="img/bg/IMG-20230731-WA0026 1.png" alt=""></a>
-							<div class="team-social-two">
-								<ul class="list-wrap">
-								
-									<li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content-two">
-							<h2 class="title"><a href="/kollam">Kerala Startup Mission
-								 </a></h2>
-							<span>ASAP Community skill park Kulakkada, Kollam</span>
-						</div>
-					</div>
-				</div>
-
-
-				
-				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-					<div class="team-item-two">
-						<div class="team-thumb-two">
-							<a href="/kochi"><img src="img/bg/KSUM 1.png" alt=""></a>
-							<div class="team-social-two">
-								<ul class="list-wrap">
-									
-									<li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content-two">
-							<h2 class="title"><a href="/kochi">Kerala Startup Mission
-								</a></h2>
-							<span>Kerala Technology Innovation Zone, Kochi</span>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-					<div class="team-item-two">
-						<div class="team-thumb-two">
-							<a href="/plkd"><img src="img/bg/IMG-20230726-WA0014 1.png" alt=""></a>
-							<div class="team-social-two">
-								<ul class="list-wrap">
-									
-									<li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content-two">
-							<h2 class="title"><a href="/plkd">Kerala Startup Mission
-								</a></h2>
-							<span>Govt. Polytechnic College, Palakkad</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-					<div class="team-item-two">
-						<div class="team-thumb-two">
-							<a href="/kozhikode"><img src="img/bg/IMG_8976 1.png" alt=""></a>
-							<div class="team-social-two">
-								<ul class="list-wrap">
-									
-									<li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content-two">
-							<h2 class="title"><a href="/kozhikode">Kerala Startup Mission
-								</a></h2>
-							<span>Govt.Cyberpark, Nellikode, Kozhikode</span>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-					<div class="team-item-two">
-						<div class="team-thumb-two">
-							<a href="/kozhikodeulpark"><img src="img/bg/IMG_20230609_191809286 1.png" alt=""></a>
-							<div class="team-social-two">
-								<ul class="list-wrap">
-									
-									<li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content-two">
-							<h2 class="title"><a href="/kozhikodeulpark">Kerala Startup Mission
-								</a></h2>
-							<span> UL CyberPark, Nellikode, Kozhikode</span>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-					<div class="team-item-two">
-						<div class="team-thumb-two">
-							<a href="/kannur"><img src="img/bg/2019-06-17 1.png" alt=""></a>
-							<div class="team-social-two">
-								<ul class="list-wrap">
-									
-									<li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content-two">
-							<h2 class="title"><a href="/kannur">MiZonne
-								 </a></h2>
-							<span>Near Kannur University Campus Kalliasseri , Kannur</span>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-					<div class="team-item-two">
-						<div class="team-thumb-two">
-							<a href="/kasaragod"><img src="img/bg/IMG-20230731-WA0019 1 (1).png" alt=""></a>
-							<div class="team-social-two">
-								<ul class="list-wrap">
-									
-									<li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content-two">
-							<h2 class="title"><a href="/kasaragod">Kerala Startup Mission
-								 </a></h2>
-							<span>ASAP Community Skill Park, Kasaragod</span>
-						</div>
-					</div>
-				</div> -->
-
-			</div>
-		</div>
-	</section>
-
-	
-
-		<section id="contact" class="newsletter-area jarallax newsletter-bg" data-background="img/banner/AdobeStock_184023893 1.png">
-			<div class="container">
-				<div class=" flex md:flex-row flex-col justify-between px-4">
-					<div class=" ">
-						<div class="newsletter-content flex ">
-							<div class="section-title white-title-two justify-center flex flex-col text-center items-center  ">
-								<img src="img/logo-white.svg" class=" w-40">
-								<h2 class=" text-lg text-white flex">G3B, Thejaswini, Technopark Campus,</h2>
-								<h2 class=" text-white text-lg flex">Trivandrum, Kerala 695581</h2>
-							</div>
-						</div>
-					</div>
-					<div class=" flex items-center ">
-						<div class="newsletter-content flex ">
-							<div class="section-title white-title-two justify-center flex flex-col  ">
-								<h2 class=" text-white flex">For more details</h2>
-								<h2 class=" text-white text-lg font-semibold flex">Arun G</h2>
-								<h2 class=" text-white text-lg font-semibold flex">Assistant Manager</h2>
-								<a class=" text-blue-200" href="mailto:arun@startupmission.in">arun@startupmission.in</a>
-								<a class=" text-blue-200" href="tel:04712700270">0471 2700270</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- newsletter-area-end -->
-
-	</main>
-	<!-- mian-area-end -->
-
-	
-</Layout>
-<script is:inline>
-    function myFunction() {
-        var x = document.getElementById("hidden_div");
+         
        
-		var e = document.getElementById("btn");
+      </main>
+      <footer id="colophon" class="site-footer footer-primary">
+        
+         <div class="buttom-footer">
+            <div class="container">
+               <div class="flex md:flex-row flex-col md:justify-between items-center justify-center">
+                 
+                  <div class="">
+                     <div class="footer-logo">
+                        <a href="#"><img src="/img/logo-white.svg" alt=""></a>
+                     </div>
+                  </div>
+                  <div class="">
+                     <div class="copy-right ">Copyright © 2025 KSUM. All rights reserveds</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <a id="backTotop" href="#" class="to-top-icon">
+         <i class="fas fa-chevron-up"></i>
+      </a>
+      <!-- custom search field html -->
+         <div class="header-search-form">
+            <div class="container">
+               <div class="header-search-container">
+                  <form class="search-form" role="search" method="get" >
+                     <input type="text" name="s" placeholder="Enter your text...">
+                  </form>
+                  <a href="#" class="search-close">
+                     <i class="fas fa-times"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      <!-- header html end -->
+   </div>
 
-        if (x.style.display === "none") {
-                    x.style.display = "block";
-					e.innerHTML="Close"
-                    
-                } else {
-                    x.style.display = "none";
-					e.innerHTML="Learn More"
-                   
-                }
-    }
-</script>
-
-
+</Layout>
