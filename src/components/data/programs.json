@@ -1,0 +1,71 @@
+[
+    
+    {
+        "title": "Kerala Startup Mission",
+        "link":"tvm",
+        "image": "IMG-20230731-WA0009 1.png",
+        "address":"G3B, Tejaswini, Technopark, Trivandrum"
+    },
+
+
+    {
+      "title": "Startup Dreams",
+      "link":"startupdreams",
+      "image": "2019-04-29 2.png",
+      "address":"Ambedkar Bhavan, Mannamthala, Trivandrum"
+  },
+
+
+
+  {
+    "title": "Kerala Startup Mission",
+    "link":"kollam",
+    "image": "IMG-20230731-WA0026 1.png",
+    "address":"ASAP Community skill park Kulakkada, Kollam"
+},
+
+{
+  "title": "Kerala Startup Mission",
+  "link":"kochi",
+  "image": "KSUM 1.png",
+  "address":"Kerala Technology Innovation Zone, Kochi"
+},
+
+{
+  "title": "Kerala Startup Mission",
+  "link":"plkd",
+  "image": "IMG-20230726-WA0014 1.png",
+  "address":"Govt. Polytechnic College, Palakkad"
+},
+{
+  "title": "Kerala Startup Mission",
+  "link":"kozhikode",
+  "image": "IMG_8976 1.png",
+  "address":"Govt.Cyberpark, Nellikode, Kozhikode"
+},
+{
+  "title": "Kerala Startup Mission",
+  "link":"kozhikodeulpark",
+  "image": "IMG_20230609_191809286 1.png",
+  "address":"UL CyberPark, Nellikode, Kozhikode"
+},
+{
+  "title": "MiZonne",
+  "link":"kannur",
+  "image": "2019-06-17 1.png",
+  "address":"Near Kannur University Campus Kalliasseri , Kannur"
+},
+    {
+      "title": "Kerala Startup Mission",
+      "link":"kasaragod",
+      "image": "IMG-20230731-WA0019 1 (1).png",
+      "address":"ASAP Community Skill Park, Kasaragod"
+  },
+  {
+    "title": "ZilCubator",
+    "link":"zilcubator",
+    "image": "33.png",
+    "address":"Manjeri, Malappuram     "
+}
+
+]

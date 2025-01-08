@@ -1,0 +1,67 @@
+---
+const { title } = Astro.props;
+
+import Navbar from "../components/Navbars.astro";
+
+const description = "Kerala Startup Mission is the central agency of the Government of Kerala for entrepreneurship development and incubation activities in Kerala, India.";
+const url = "https://startupmission.kerala.gov.in/";
+
+---
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>LEAP | Kerala Startup Mission</title>
+        <meta name="description" content="LEAP | Kerala Startup Mission">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="/img/banner/leap final logo (1).jpg">
+        <!-- Place favicon.ico in the root directory -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+		<!-- CSS here -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/animate.min.css">
+        <link rel="stylesheet" href="/css/magnific-popup.css">
+        <link rel="stylesheet" href="/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="/css/odometer.css">
+        <link rel="stylesheet" href="/css/slick.css">
+        <!-- <link rel="stylesheet" href="css/tg-cursor.css"> -->
+        <link rel="stylesheet" href="/css/default.css">
+        <link rel="stylesheet" href="/css/jarallax.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/responsive.css">
+    </head>
+	<body>
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <i class="fas fa-level-up-alt"></i>
+        </button>
+        
+		<Navbar></Navbar>
+		<slot />
+
+		<script is:inline  src="/js/vendor/jquery-3.6.0.min.js"></script>
+        <script is:inline src="/js/bootstrap.min.js"></script>
+        <script is:inline src="/js/imagesloaded.pkgd.min.js"></script>
+        <script is:inline src="/js/jquery.magnific-popup.min.js"></script>
+        <script is:inline src="/js/jquery.odometer.min.js"></script>
+        <script is:inline src="/js/jquery.appear.js"></script>
+        <script is:inline src="/js/slick.min.js"></script>
+        <script is:inline src="/js/slick-animation.min.js"></script>
+        <script is:inline src="/js/ajax-form.js"></script>
+        <script is:inline src="/js/jarallax.min.js"></script>
+        <script is:inline src="/js/parallax.min.js"></script>
+        <script is:inline src="/js/gsap.js"></script>
+        <script is:inline src="/js/ScrollTrigger.js"></script>
+        <script is:inline src="/js/SplitText.js"></script>
+        <script is:inline src="/js/gsap-animation.js"></script>
+        <!-- <script is:inline src="js/tg-cursor.min.js"></script> -->
+        <script is:inline src="/js/wow.min.js"></script>
+        <script is:inline src="/js/main.js"></script>
+	</body>
+</html>
