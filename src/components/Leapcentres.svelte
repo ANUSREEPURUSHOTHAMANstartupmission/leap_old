@@ -37,7 +37,7 @@
                         <figure class="feature-image">
                             <img src="img/leap/{program.image}" alt="" class="h-48 object-cover w-full">
                         </figure>
-                        <div class="entry-content flex-1 flex flex-col justify-between">
+                        <div class="entry-content flex-1 flex flex-col justify-between border-b-[1px] border-gray-100">
                             <h3 class="text-lg font-bold">{program.title}</h3>
                             <div class="flex flex-col">
                                 <span class="byline text-sm text-gray-600">{program.address}</span>

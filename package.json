@@ -19,8 +19,8 @@
   },
   "dependencies": {
     "flowbite": "^1.8.0",
-    "svelte-swipe": "^1.9.2",
     "svelte-markdown": "^0.2.3",
+    "svelte-swipe": "^1.9.2",
     "swiper": "^8.3.2",
     "tailwindcss-scoped-groups": "^2.0.0"
   }
